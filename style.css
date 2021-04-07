@@ -3,9 +3,9 @@
     padding: 0;
 }
 
-#baslik {
-    margin: 30px 300px 30px 500px;
-    padding: 30xp; 
+.baslik {
+    margin: 3rem;
+
 
 }
 #title{  
@@ -14,4 +14,7 @@
 }
 #description{
     text-align: center;
+}
+form{
+    margin-bottom: 3rem;
 }
