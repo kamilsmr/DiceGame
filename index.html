@@ -21,23 +21,25 @@
             <p id="description">Thank you for taking the time to help us improve the platform </p>
         </div>
 
-    <form class="row g-3 mx-4" id="survey-form">
+    <form class="row g-3 mx-4" id="survey-form" data-toggle="validator" novalidate="true">
       <div class="col-md-6">
         <label for="name" class="form-label">Name</label>
-        <input type="text" class="form-control" id="name" placeholder="Isminizi Giriniz" />
+        <input type="text" class="form-control"  placeholder="Isminizi Giriniz" required id="name"/>
       </div>
       <div class="col-md-6">
         <label for="surname" class="form-label"> Surname</label>
-        <input type="text" class="form-control" id="surname" placeholder="Soy isminizi Giriniz" />
+        <input type="text" class="form-control" id="surname" placeholder="Soy isminizi Giriniz" required/>
       </div>
 
-      <div class="col-md-6" id="name">
-        <label for="inputEmail4" class="form-label">Email</label>
-        <input type="email" class="form-control" id="inputEmail4" />
+      <div class="col-md-6">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" required
+        aria-describedby="emailHelp"
+        placeholder="Enter your email"/>
       </div>
       <div class="col-md-6">
         <label for="inputPassword4" class="form-label">Password</label>
-        <input type="password" class="form-control" id="inputPassword4" />
+        <input type="password" class="form-control" id="inputPassword4" required/>
       </div>
       <div class="col-12">
         <label for="inputAddress" class="form-label">Address</label>
@@ -46,6 +48,7 @@
           class="form-control"
           id="inputAddress"
           placeholder="1234 Main St"
+          required
         />
       </div>
       <div class="col-12">
@@ -55,6 +58,7 @@
           class="form-control"
           id="inputAddress2"
           placeholder="Apartment, studio, or floor"
+          required
         />
       </div>
       <div class="col-md-6">
@@ -90,3 +94,10 @@
     ></script>
   </body>
 </html>
+
+
+
+<!-- 
+
+  https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-survey-form
+ -->
