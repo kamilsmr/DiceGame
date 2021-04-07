@@ -2,3 +2,16 @@
     margin: 0;
     padding: 0;
 }
+
+#baslik {
+    margin: 30px 300px 30px 500px;
+    padding: 30xp; 
+
+}
+#title{  
+    text-align: center;
+
+}
+#description{
+    text-align: center;
+}
